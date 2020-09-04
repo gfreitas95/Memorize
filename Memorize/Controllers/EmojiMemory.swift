@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 class EmojiMemory: ObservableObject {
     
     @Published private var game: MemoryGame<String> = EmojiMemory.createMemoryGame()

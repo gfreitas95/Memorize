@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct MemorizeGame: View {
     @ObservedObject var gameView: EmojiMemory
     var body: some View {
@@ -24,6 +25,7 @@ struct MemorizeGame: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct CardView: View {
     var card: MemoryGame<String>.Card
     var body: some View {
@@ -56,6 +58,7 @@ struct CardView: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MemorizeGame(gameView: EmojiMemory())
